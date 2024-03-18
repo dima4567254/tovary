@@ -1,0 +1,114 @@
+.articles {
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__link {
+    min-height: rem(490);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: margin-top .5s;
+    margin-top: 0%;
+
+    &:focus {
+      color: $focus;
+    }
+
+    &:hover {
+      margin-top: -1%;
+      box-shadow: 0 0 20px #88888836;
+    }
+
+    &:active {
+      color: $active;
+    }
+
+    &:nth-child(odd) {
+      margin-left: rem(5);
+      margin-right: rem(5);
+    }
+  }
+
+  &__wrapper {
+    padding: rem(20);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    //обошолся без спана возможно применеть в майн каталоге
+    // все таки интересный случай выровнял ходя думал не получится надо записать отдельно
+    flex: 1 1 auto;
+  }
+
+  &__data {
+    font-size: rem(16);
+    color: #828282;
+    margin-bottom: rem(5);
+  }
+
+  // &__gift {//отличие
+  //   background-color: #1ead2b;
+  //   border-radius: 3px;
+  //   padding: 3px 10px;
+  //   display: inline;
+  //   // margin-bottom: 0.3em em;
+  //   // font-weight: 400;
+  //   text-transform: uppercase;
+  //   color: #ffffff;
+  //   margin-bottom: rem(15);
+  // }
+
+  &__images {
+    line-height: 0;
+  }
+
+  &__img {
+    width: rem(510);
+    height: rem(320);
+    object-fit: cover;
+  }
+
+  &__box {
+    flex: 1 1 auto;
+  }
+
+  &__subtitle {
+    font-size: rem(18);
+    font-weight: 600;
+    margin-bottom: rem(10);
+    @include line-clamp(2);
+  }
+
+  &__text {
+    color: #828282;
+    font-size: rem(16);
+    // margin-bottom: rem(10);//отличие
+    @include line-clamp(2);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #e0e0e0;
+    padding: rem(20);
+    flex: 0 1 auto;
+  }
+
+  &__info {
+    @include line-height(14, 17);
+  }
+
+  &__day {
+    font-size: rem(26);
+    @include line-height(26, 31);
+    font-weight: 600;
+  }
+}
+
+.catalog-swipers {
+  overflow: hidden;
+}

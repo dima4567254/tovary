@@ -1,0 +1,21 @@
+.intro {}
+
+.slider-intro {
+  display: flex;
+  gap: rem(10);
+
+  &__img {
+    object-fit: cover;
+    height: rem(500);
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+// придумать ка не задавать скругление и бефору и слайдам

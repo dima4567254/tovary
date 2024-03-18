@@ -1,0 +1,43 @@
+.partners {
+
+  &__title {
+    font-size: rem(48);
+    @include line-height(48, 58);
+    margin-bottom: rem(20);
+  }
+
+  &__title span {
+    color: #1ead2b;
+  }
+
+  &__wrapper {
+    // margin-top: rem(80); //!!! не правильно
+    // margin-bottom: rem(80);
+    @include adaptiveValue("margin-top", 80, 30);
+    @include adaptiveValue("margin-bottom", 80, 30);
+  }
+
+  &__wrap {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: rem(18);
+    @include line-height(18, 28);
+    @include line-clamp(6);
+    margin-bottom: rem(20);
+  }
+
+  &__images {
+    line-height: 0;
+  }
+
+  &__img {
+    filter: grayscale(100%); //снипед
+    object-fit: contain;
+    width: rem(270);
+    height: rem(60);
+  }
+}
