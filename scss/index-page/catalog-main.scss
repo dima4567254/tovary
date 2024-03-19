@@ -6,7 +6,7 @@
   &__title {
     margin-bottom: rem(45);
     @include line-clamp(3);
-    
+
     // слетела картинка и сделать высоту прогрес бара норм а еще желательно высоту блока 
     // height: revert-layer;
   }
@@ -23,9 +23,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: rem(10);
+    padding-left: rem(10);
+    padding-right: rem(10);
     // min-height: rem(530); ///!!!
-    min-height: rem(490); ///!!!
-    // min-height: 100%; ///!!!
+    // min-height: rem(490); ///!!!
+    min-height: 100%; ///!!!
   }
 
   &__wrapper {
@@ -53,7 +56,7 @@
   &__subtitle {
     font-size: rem(20);
     @include line-height(20, 20);
-    @include line-clamp(2);
+    // @include line-clamp(2);
     margin-bottom: rem(10);
   }
 
@@ -178,7 +181,7 @@
     text-decoration-line: underline;
   }
 
-  &__text{
+  &__text {
     margin-left: 1rem;
   }
 
@@ -190,19 +193,44 @@
     @include adaptiveValue("padding-bottom", 12, 10);
     @include adaptiveValue("padding-top", 12, 10);
   }
+  &__sda {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 // сделаать что бы выравнивалось по высоте
 .catalog-swiper {
   overflow: hidden;
-  min-height: rem(585);
+  width: 100%;
+  height: 100%;
+  // min-height: rem(585);
 
-  &--recomend {
-    height: rem(535);
-  }
-  &--catalog {
-    min-height: rem(545);
-  }
+  // &--recomend {
+  //   height: rem(535);
+  // }
+  // &--catalog {
+  //   min-height: rem(545);
+  // }
 
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.swiper-slide {
+  // text-align: center;
+  // font-size: 18px;
+  // background: #fff;
+  // display: flex !important;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.box {
+  flex: 1 1 auto;
 }
 
 .catalog-main__wrap {
