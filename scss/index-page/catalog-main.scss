@@ -6,6 +6,7 @@
   &__title {
     margin-bottom: rem(45);
     @include line-clamp(3);
+    
     // слетела картинка и сделать высоту прогрес бара норм а еще желательно высоту блока 
     // height: revert-layer;
   }
@@ -22,8 +23,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: rem(530); ///!!!
-    min-height: 100%; ///!!!
+    // min-height: rem(530); ///!!!
+    min-height: rem(490); ///!!!
+    // min-height: 100%; ///!!!
   }
 
   &__wrapper {
@@ -189,14 +191,18 @@
     @include adaptiveValue("padding-top", 12, 10);
   }
 }
-
+// сделаать что бы выравнивалось по высоте
 .catalog-swiper {
   overflow: hidden;
-  height: rem(545);
+  min-height: rem(585);
 
   &--recomend {
     height: rem(535);
   }
+  &--catalog {
+    min-height: rem(545);
+  }
+
 }
 
 .catalog-main__wrap {
