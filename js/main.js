@@ -6,6 +6,29 @@ console.log('work6454');
 //   $('select,filter-selects__sort').styler();
 // }, 100)
 
+$('.slider-slick').slick({
+  slidesToShow: 4,  /* количество слайдов на показ*/
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 3000,
+  // responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 577,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       // slidesToScroll: 2,
+  //     }
+  //   },
+  // ]
+});
+
 const sliderIntro = new Swiper('.sliderIntro', {
   slidesPerView: 3,
   loop: true,

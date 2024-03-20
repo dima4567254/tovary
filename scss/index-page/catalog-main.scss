@@ -174,8 +174,10 @@
   &__credit {
     // display: flex;
     // align-items: center;
-    display: grid;
-    grid-template-columns: rem(17) 1fr;
+    // display: grid;
+    // grid-template-columns: rem(17) 1fr;
+    display: flex;
+    justify-content: space-between;
     // grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
     font-size: rem(16);
     @include line-height(16, 22);
@@ -194,6 +196,7 @@
     @include adaptiveValue("padding-bottom", 12, 10);
     @include adaptiveValue("padding-top", 12, 10);
   }
+
   &__sda {
     display: flex;
     flex-direction: column;
@@ -241,4 +244,52 @@
 // стили звездного рейтинга
 .jq-ry-container {
   // margin: 0 auto rem(25);
+}
+
+
+
+.slider-slick {
+  // display: flex !important;
+  // justify-content: space-between;
+  // gap: 15px;
+
+  &__lis {
+    // color: inherit;
+    // display: flex;
+  }
+
+  &__li {
+    display: flex !important;
+    max-width: rem(380);
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: rem(10);
+    padding-left: rem(10);
+    padding-right: rem(10);
+    min-height: 100%;
+  }
+
+  &__wraps {
+    max-width: rem(380);
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: rem(10);
+    padding-left: rem(10);
+    padding-right: rem(10);
+    min-height: 100%;
+  }
+}
+
+.slider-slicks {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
