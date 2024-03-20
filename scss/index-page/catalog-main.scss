@@ -12,7 +12,8 @@
   }
 
   &__items {
-    display: grid;
+    // display: grid;
+    display: flex;
   }
 
   &__item {
