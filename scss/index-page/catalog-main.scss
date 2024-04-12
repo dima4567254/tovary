@@ -7,6 +7,7 @@
     margin-bottom: rem(45);
     @include line-clamp(3);
 
+
     // слетела картинка и сделать высоту прогрес бара норм а еще желательно высоту блока 
     // height: revert-layer;
   }
@@ -24,20 +25,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: rem(10);
-    padding-left: rem(10);
-    padding-right: rem(10);
+    // padding-top: rem(10);
+    // padding-left: rem(10);
+    // padding-right: rem(10);
     // min-height: rem(530); ///!!!
     // min-height: rem(490); ///!!!
-    min-height: 100%; ///!!!
+    min-height: 505px;
+    // min-height: 100%; ///!!!
   }
 
   &__wrapper {
     padding-top: rem(10);
     padding-left: rem(10);
     padding-right: rem(10);
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
   }
 
   &__div {
@@ -165,6 +167,7 @@
     font-size: rem(27);
     font-weight: 700;
     display: block;
+    line-height: 1.2;
 
     &--new {
       margin-bottom: rem(10); //!!!
@@ -216,6 +219,10 @@
   // &--catalog {
   //   min-height: rem(545);
   // }
+
+  &__wrapper {
+    padding-bottom: rem(40);
+  }
 
 }
 
