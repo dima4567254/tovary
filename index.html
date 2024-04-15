@@ -69,6 +69,12 @@
 
 <!-- доделать уже звезды!!! -->
 
+<!--
+  удалить итеммс второй секция и ниже
+переделать все на грид
+ анимация полоски
+ -->
+
 
 <body class="body">
   <header class="header">
@@ -4102,7 +4108,7 @@
           Хіт продажу
         </h2>
         <div class="catalog-main__wrap">
-          <div class="catalog-swiper catalog-swiper--catalog sliderCatalog">
+          <div class="catalog-swiper sliderCatalog">
             <div class="button-next">
               <svg class="button__svg" width="9px" height="14px" fill="#1EAD2B">
                 <use xlink:href="images/sprite.svg#arrow_green">
@@ -4116,324 +4122,81 @@
               </svg>
             </div>
             <ul class="swiper-wrapper catalog-swiper__wrapper">
-              <li class="swiper-slide swiper-slide--catalog">
-                <div class="catalog-main__items">
-                  <div class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                    </div>
-                    <!-- <div class="box"> -->
-                    <a class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        </p>
-                      </h3>
-                    </a>
-                    <!-- </div> -->
-                    <div class="catalog-main__sda">
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2235099
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              329
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -100
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            229
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="catalog-main__inners">
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#compare">
-                          </use>
-                        </svg>
-                      </button>
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#favorite">
-                          </use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- </article> -->
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide swiper-slide--catalog">
-                <div class="catalog-main__items">
-                  <div class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                    </div>
-                    <!-- <div class="box"> -->
-                    <a class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-
-                        </p>
-                      </h3>
-                    </a>
-                    <!-- </div> -->
-                    <div class="catalog-main__sda">
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2235099
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              329
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -100
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            229
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="catalog-main__inners">
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#compare">
-                          </use>
-                        </svg>
-                      </button>
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#favorite">
-                          </use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- </article> -->
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide swiper-slide--catalog">
-                <div class="catalog-main__items">
-                  <div class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                    </div>
-                    <!-- <div class="box"> -->
-                    <a class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий
-                        </p>
-                      </h3>
-                    </a>
-                    <!-- </div> -->
-                    <div class="catalog-main__sda">
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2235099
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              329
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -100
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            229
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="catalog-main__inners">
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#compare">
-                          </use>
-                        </svg>
-                      </button>
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#favorite">
-                          </use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- </article> -->
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide swiper-slide--catalog">
-                <div class="catalog-main__items">
-                  <div class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                    </div>
-                    <!-- <div class="box"> -->
-                    <a class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий
-                        </p>
-                      </h3>
-                    </a>
-                    <!-- </div> -->
-                    <div class="catalog-main__sda">
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2235099
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              329
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -100
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            229
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="catalog-main__inners">
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#compare">
-                          </use>
-                        </svg>
-                      </button>
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#favorite">
-                          </use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- </article> -->
-                  </div>
-                </div>
-              </li>
-
-              <!-- <li class="swiper-slide">
+              <li class="swiper-slide">
                 <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> --
                   <div class="catalog-main__wrapper">
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
+                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
+                    </a>
+                    <a class="catalog-main__link" href="#">
+                      <h3 class="catalog-main__subtitle">
+                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
+                        </p>
+                      </h3>
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2235099
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              329
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              -100
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            229
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
                         </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- </article> -->
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <!-- <article class="catalog-main__article"> -->
+                  <div class="catalog-main__wrapper">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__present">
+                        Подарунок
+                      </span>
+                    </div>
+                    <a class="catalog-main__images" href="#">
                       <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
                         alt="Кавоварка DeLonghi EC 685 R">
-                    </div>
+                    </a>
                     <div class="catalog-main__sda">
                       <div class="catalog-main__link" href="#">
                         <h3 class="catalog-main__subtitle">
@@ -4470,8 +4233,7 @@
                           </button>
                         </span>
                       </div>
-                      <!-- </li> --
-
+                      <!-- </li> -->
                     </div>
                   </div>
                   <div class="catalog-main__inners">
@@ -4489,22 +4251,20 @@
                     </button>
                   </div>
                 </div>
-                <!-- </article> --
+                <!-- </article> -->
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
                   <div class="catalog-main__wrapper">
-                    <!-- <article class="catalog-main__article"> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__price">
+                        Суперціна
+                      </span>
+                    </div>
+                    <a class="catalog-main__images" href="#">
                       <img class="catalog-main__img" src="images/popular/epilator.jpg"
                         alt="Епілятор Braun SensoSmart SES 9/995 BS">
-                    </div>
+                    </a>
                     <div class="catalog-main__sda">
                       <div class="box">
                         <a class="catalog-main__link" href="#">
@@ -4544,7 +4304,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- </div> --
                   <div class="catalog-main__inners">
                     <button class="catalog-main__btns" type="button">
                       <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
@@ -4559,962 +4318,411 @@
                       </svg>
                     </button>
                   </div>
-
-                  <!-- </article> 
+                </div>
               </li>
-            -->
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <div class="catalog-main__wrapper">
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
+                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
+                    </a>
+                    <a class="catalog-main__link" href="#">
+                      <h3 class="catalog-main__subtitle">
+                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
+                      </h3>
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2235099
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              329
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              -100
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            229
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- </article> -->
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <!-- <article class="catalog-main__article"> -->
+                  <div class="catalog-main__wrapper">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__price">
+                        Суперціна
+                      </span>
+                    </div>
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
+                        alt="Кавоварка DeLonghi EC 685 R">
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="catalog-main__link" href="#">
+                        <h3 class="catalog-main__subtitle">
+                          Кавоварка DeLonghi EC 685 R
+                        </h3>
+                      </div>
+
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2134129
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              7 999
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              -1 520
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            6 479
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                      <!-- </li> -->
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- </article> -->
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <div class="catalog-main__wrapper">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__price">
+                        Суперціна
+                      </span>
+                    </div>
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="images/popular/epilator.jpg"
+                        alt="Епілятор Braun SensoSmart SES 9/995 BS">
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="box">
+                        <a class="catalog-main__link" href="#">
+                          <h3 class="catalog-main__subtitle">
+                            Епілятор Braun SensoSmart SES 9/995 BS
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2163859
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              9 999
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              - 2 900
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            -1 520
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <div class="catalog-main__wrapper">
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
+                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
+                    </a>
+                    <a class="catalog-main__link" href="#">
+                      <h3 class="catalog-main__subtitle">
+                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
+                        </p>
+                      </h3>
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2235099
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              329
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              -100
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            229
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- </article> -->
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <!-- <article class="catalog-main__article"> -->
+                  <div class="catalog-main__wrapper">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__price">
+                        Суперціна
+                      </span>
+
+                    </div>
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
+                        alt="Кавоварка DeLonghi EC 685 R">
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="catalog-main__link" href="#">
+                        <h3 class="catalog-main__subtitle">
+                          Кавоварка DeLonghi EC 685 R
+                        </h3>
+                      </div>
+
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2134129
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              7 999
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              -1 520
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            6 479
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                      <!-- </li> -->
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- </article> -->
+              </li>
+              <li class="swiper-slide">
+                <div class="catalog-main__item">
+                  <div class="catalog-main__wrapper">
+                    <div class="catalog-main__discounts">
+                      <span class="catalog-main__price">
+                        Суперціна
+                      </span>
+                    </div>
+                    <a class="catalog-main__images" href="#">
+                      <img class="catalog-main__img" src="images/popular/epilator.jpg"
+                        alt="Епілятор Braun SensoSmart SES 9/995 BS">
+                    </a>
+                    <div class="catalog-main__sda">
+                      <div class="box">
+                        <a class="catalog-main__link" href="#">
+                          <h3 class="catalog-main__subtitle">
+                            Епілятор Braun SensoSmart SES 9/995 BS
+                          </h3>
+                        </a>
+                      </div>
+                      <div class="catalog-main__inner">
+                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
+                        <p class="catalog-main__code">
+                          Код: 2163859
+                        </p>
+                      </div>
+                      <div class="catalog-main__info">
+                        <div class="catalog-main__flex">
+                          <div class="catalog-main__box">
+                            <div class="catalog-main__old">
+                              9 999
+                              <span>грн</span>
+                            </div>
+                            <div class="catalog-main__saving">
+                              - 2 900
+                              <span>грн</span>
+                            </div>
+                          </div>
+                          <div class="catalog-main__new">
+                            -1 520
+                            <span>грн</span>
+                          </div>
+                        </div>
+                        <span>
+                          <button class="catalog-main__btn" type="button">
+                            Купити
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-main__inners">
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#compare">
+                        </use>
+                      </svg>
+                    </button>
+                    <button class="catalog-main__btns" type="button">
+                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+                        <use xlink:href="images/sprite.svg#favorite">
+                        </use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
             </ul>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section>
-    <!-- копия первой секции свайпенр -->
-    <section class="catalog-main section">
-      <div class="container">
-        <h2 class="catalog-main__title title">
-          копия первой секции
-        </h2>
-        <ul class="catalog-slider">
-          <div class="catalog-slider__day2">
-            <div class="catalog-slider__day">
-              <li class="catalog-slider__item">
-                <div class="catalog-slider__hey2">
-                  <div class="catalog-slider__hey">
-                    <div class="catalog-slider__items">
-                      <!-- <article class="catalog-main__article"> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <div class="catalog-main__images" href="#">
-                        <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                          alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                      </div>
-                      <!-- <div class="box"> -->
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          </p>
-                        </h3>
-                      </a>
-                      <!-- </div> -->
-                      <div class="catalog-main__sda">
-                        <div class="catalog-main__inner">
-                          <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                          <p class="catalog-main__code">
-                            Код: 2235099
-                          </p>
-                        </div>
-                        <div class="catalog-main__info">
-                          <div class="catalog-main__flex">
-                            <div class="catalog-main__box">
-                              <div class="catalog-main__old">
-                                329
-                                <span>грн</span>
-                              </div>
-                              <div class="catalog-main__saving">
-                                -100
-                                <span>грн</span>
-                              </div>
-                            </div>
-                            <div class="catalog-main__new">
-                              229
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <span>
-                            <button class="catalog-main__btn" type="button">
-                              Купити
-                            </button>
-                          </span>
-                        </div>
-                      </div>
-                      <!-- </div> -->
-                      <div class="catalog-main__inners">
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#compare">
-                            </use>
-                          </svg>
-                        </button>
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#favorite">
-                            </use>
-                          </svg>
-                        </button>
-                      </div>
-                      <!-- </article> -->
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-          </div>
-          <div class="catalog-slider__day2">
-            <div class="catalog-slider__day">
-              <li class="catalog-slider__item">
-                <div class="catalog-slider__hey2">
-                  <div class="catalog-slider__hey">
-                    <div class="catalog-slider__items">
-                      <!-- <article class="catalog-main__article"> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <div class="catalog-main__images" href="#">
-                        <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                          alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                      </div>
-                      <!-- <div class="box"> -->
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
 
-                          </p>
-                        </h3>
-                      </a>
-                      <!-- </div> -->
-                      <div class="catalog-main__sda">
-
-                        <div class="catalog-main__inner">
-                          <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                          <p class="catalog-main__code">
-                            Код: 2235099
-                          </p>
-                        </div>
-                        <div class="catalog-main__info">
-                          <div class="catalog-main__flex">
-                            <div class="catalog-main__box">
-                              <div class="catalog-main__old">
-                                329
-                                <span>грн</span>
-                              </div>
-                              <div class="catalog-main__saving">
-                                -100
-                                <span>грн</span>
-                              </div>
-                            </div>
-                            <div class="catalog-main__new">
-                              229
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <span>
-                            <button class="catalog-main__btn" type="button">
-                              Купити
-                            </button>
-                          </span>
-                        </div>
-                      </div>
-                      <!-- </div> -->
-                      <div class="catalog-main__inners">
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#compare">
-                            </use>
-                          </svg>
-                        </button>
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#favorite">
-                            </use>
-                          </svg>
-                        </button>
-                      </div>
-                      <!-- </article> -->
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-          </div>
-          <div class="catalog-slider__day2">
-            <li class="catalog-slider__item">
-              <div class="catalog-slider__hey2">
-                <div class="catalog-slider__hey">
-                  <div class="catalog-slider__items">
-                    <!-- <article class="catalog-main__article"> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-                    <!-- <div class="catalog-main__wrapper"> -->
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                        alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                    </div>
-                    <!-- <div class="box"> -->
-                    <a class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                        Контейнер харчовий
-                        </p>
-                      </h3>
-                    </a>
-                    <!-- </div> -->
-                    <div class="catalog-main__sda">
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2235099
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              329
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -100
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            229
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="catalog-main__inners">
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#compare">
-                          </use>
-                        </svg>
-                      </button>
-                      <button class="catalog-main__btns" type="button">
-                        <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                          <use xlink:href="images/sprite.svg#favorite">
-                          </use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- </article> -->
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-          </div>
-          <div class="catalog-slider__day2">
-            <div class="catalog-slider__day">
-              <li class="catalog-slider__item">
-                <div class="catalog-slider__hey2">
-                  <div class="catalog-slider__hey">
-                    <div class="catalog-slider__items">
-                      <!-- <article class="catalog-main__article"> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <!-- <div class="catalog-main__div">
-                                      <span class="catalog-main__discounts">
-                                        Суперціна
-                                      </span>
-                                    </div> -->
-                      <!-- <div class="catalog-main__wrapper"> -->
-                      <div class="catalog-main__images" href="#">
-                        <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                          alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                      </div>
-                      <!-- <div class="box"> -->
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          Контейнер харчовий
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          Контейнер харчовий
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          Контейнер харчовий
-                          </p>
-                        </h3>
-                      </a>
-                      <!-- </div> -->
-                      <div class="catalog-main__sda">
-
-                        <div class="catalog-main__inner">
-                          <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                          <p class="catalog-main__code">
-                            Код: 2235099
-                          </p>
-                        </div>
-                        <div class="catalog-main__info">
-                          <div class="catalog-main__flex">
-                            <div class="catalog-main__box">
-                              <div class="catalog-main__old">
-                                329
-                                <span>грн</span>
-                              </div>
-                              <div class="catalog-main__saving">
-                                -100
-                                <span>грн</span>
-                              </div>
-                            </div>
-                            <div class="catalog-main__new">
-                              229
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <span>
-                            <button class="catalog-main__btn" type="button">
-                              Купити
-                            </button>
-                          </span>
-                        </div>
-                      </div>
-                      <!-- </div> -->
-                      <div class="catalog-main__inners">
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#compare">
-                            </use>
-                          </svg>
-                        </button>
-                        <button class="catalog-main__btns" type="button">
-                          <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                            <use xlink:href="images/sprite.svg#favorite">
-                            </use>
-                          </svg>
-                        </button>
-                      </div>
-                      <!-- </article> -->
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-          </div>
-        </ul>
-
-
-
-
-        <!-- <li class="swiper-slide">
-                <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> --
-                  <div class="catalog-main__wrapper">
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
-                        alt="Кавоварка DeLonghi EC 685 R">
-                    </div>
-                    <div class="catalog-main__sda">
-                      <div class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Кавоварка DeLonghi EC 685 R
-                        </h3>
-                      </div>
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2134129
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              7 999
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -1 520
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            6 479
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                      <!-- </li> --
-
-                    </div>
-                  </div>
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <!-- </article> --
-              </li>
-              <li class="swiper-slide">
-                <div class="catalog-main__item">
-                  <div class="catalog-main__wrapper">
-                    <!-- <article class="catalog-main__article"> -->
-        <!-- <div class="catalog-main__wrapper"> -->
-        <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/epilator.jpg"
-                        alt="Епілятор Braun SensoSmart SES 9/995 BS">
-                    </div>
-                    <div class="catalog-main__sda">
-                      <div class="box">
-                        <a class="catalog-main__link" href="#">
-                          <h3 class="catalog-main__subtitle">
-                            Епілятор Braun SensoSmart SES 9/995 BS
-                          </h3>
-                        </a>
-                      </div>
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2163859
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              9 999
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              - 2 900
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            -1 520
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- </div> --
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <!-- </article> 
-              </li>
-            -->
-        <!-- </ul> -->
-        <!-- </div> -->
-        <!-- </div> -->
-      </div>
-    </section>
-    <!-- вторая копия на слике-->
-    <section class="catalog-main section">
-      <div class="container">
-        <h2 class="catalog-main__title title">
-          вторая копия
-        </h2>
-        <div class="catalog-slider">
-          <div class="catalog-slider__items">
-            <div class="catalog-slider__item">
-
-              <!-- <article class="catalog-main__article"> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <div class="catalog-main__images" href="#">
-                <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                  alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-              </div>
-              <!-- <div class="box"> -->
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  </p>
-                </h3>
-              </a>
-              <!-- </div> -->
-              <div class="catalog-main__sda">
-                <div class="catalog-main__inner">
-                  <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                  <p class="catalog-main__code">
-                    Код: 2235099
-                  </p>
-                </div>
-                <div class="catalog-main__info">
-                  <div class="catalog-main__flex">
-                    <div class="catalog-main__box">
-                      <div class="catalog-main__old">
-                        329
-                        <span>грн</span>
-                      </div>
-                      <div class="catalog-main__saving">
-                        -100
-                        <span>грн</span>
-                      </div>
-                    </div>
-                    <div class="catalog-main__new">
-                      229
-                      <span>грн</span>
-                    </div>
-                  </div>
-                  <span>
-                    <button class="catalog-main__btn" type="button">
-                      Купити
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <!-- </div> -->
-              <div class="catalog-main__inners">
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#compare">
-                    </use>
-                  </svg>
-                </button>
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#favorite">
-                    </use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- </article> -->
-          <div class="catalog-slider__items">
-            <div class="catalog-slider__item">
-
-              <!-- <article class="catalog-main__article"> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <div class="catalog-main__images" href="#">
-                <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                  alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-              </div>
-              <!-- <div class="box"> -->
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-
-                  </p>
-                </h3>
-              </a>
-              <!-- </div> -->
-              <div class="catalog-main__sda">
-                <div class="catalog-main__inner">
-                  <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                  <p class="catalog-main__code">
-                    Код: 2235099
-                  </p>
-                </div>
-                <div class="catalog-main__info">
-                  <div class="catalog-main__flex">
-                    <div class="catalog-main__box">
-                      <div class="catalog-main__old">
-                        329
-                        <span>грн</span>
-                      </div>
-                      <div class="catalog-main__saving">
-                        -100
-                        <span>грн</span>
-                      </div>
-                    </div>
-                    <div class="catalog-main__new">
-                      229
-                      <span>грн</span>
-                    </div>
-                  </div>
-                  <span>
-                    <button class="catalog-main__btn" type="button">
-                      Купити
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <!-- </div> -->
-              <div class="catalog-main__inners">
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#compare">
-                    </use>
-                  </svg>
-                </button>
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#favorite">
-                    </use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- </article> -->
-          <div class="catalog-slider__items">
-            <div class="catalog-slider__item">
-
-              <!-- <article class="catalog-main__article"> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <div class="catalog-main__images" href="#">
-                <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                  alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-              </div>
-              <!-- <div class="box"> -->
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий
-                  </p>
-                </h3>
-              </a>
-              <!-- </div> -->
-              <div class="catalog-main__sda">
-
-                <div class="catalog-main__inner">
-                  <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                  <p class="catalog-main__code">
-                    Код: 2235099
-                  </p>
-                </div>
-                <div class="catalog-main__info">
-                  <div class="catalog-main__flex">
-                    <div class="catalog-main__box">
-                      <div class="catalog-main__old">
-                        329
-                        <span>грн</span>
-                      </div>
-                      <div class="catalog-main__saving">
-                        -100
-                        <span>грн</span>
-                      </div>
-                    </div>
-                    <div class="catalog-main__new">
-                      229
-                      <span>грн</span>
-                    </div>
-                  </div>
-                  <span>
-                    <button class="catalog-main__btn" type="button">
-                      Купити
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <!-- </div> -->
-              <div class="catalog-main__inners">
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#compare">
-                    </use>
-                  </svg>
-                </button>
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#favorite">
-                    </use>
-                  </svg>
-                </button>
-              </div>
-              <!-- </article> -->
-            </div>
-          </div>
-          <div class="catalog-slider__items">
-            <div class="catalog-slider__item">
-
-              <!-- <article class="catalog-main__article"> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <!-- <div class="catalog-main__div">
-                                      <span class="catalog-main__discounts">
-                                        Суперціна
-                                      </span>
-                                    </div> -->
-              <!-- <div class="catalog-main__wrapper"> -->
-              <div class="catalog-main__images" href="#">
-                <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                  alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-              </div>
-              <!-- <div class="box"> -->
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий
-                  </p>
-                </h3>
-              </a>
-              <!-- </div> -->
-              <div class="catalog-main__sda">
-
-                <div class="catalog-main__inner">
-                  <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                  <p class="catalog-main__code">
-                    Код: 2235099
-                  </p>
-                </div>
-                <div class="catalog-main__info">
-                  <div class="catalog-main__flex">
-                    <div class="catalog-main__box">
-                      <div class="catalog-main__old">
-                        329
-                        <span>грн</span>
-                      </div>
-                      <div class="catalog-main__saving">
-                        -100
-                        <span>грн</span>
-                      </div>
-                    </div>
-                    <div class="catalog-main__new">
-                      229
-                      <span>грн</span>
-                    </div>
-                  </div>
-                  <span>
-                    <button class="catalog-main__btn" type="button">
-                      Купити
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <!-- </div> -->
-              <div class="catalog-main__inners">
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#compare">
-                    </use>
-                  </svg>
-                </button>
-                <button class="catalog-main__btns" type="button">
-                  <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                    <use xlink:href="images/sprite.svg#favorite">
-                    </use>
-                  </svg>
-                </button>
-              </div>
-              <!-- </article> -->
-            </div>
-          </div>
-        </div>
-
-
-
-        <!-- <li class="swiper-slide">
-                <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> --
-                  <div class="catalog-main__wrapper">
-                    <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
-                        alt="Кавоварка DeLonghi EC 685 R">
-                    </div>
-                    <div class="catalog-main__sda">
-                      <div class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Кавоварка DeLonghi EC 685 R
-                        </h3>
-                      </div>
-
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2134129
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              7 999
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              -1 520
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            6 479
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                      <!-- </li> --
-
-                    </div>
-                  </div>
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <!-- </article> --
-              </li>
-              <li class="swiper-slide">
-                <div class="catalog-main__item">
-                  <div class="catalog-main__wrapper">
-                    <!-- <article class="catalog-main__article"> -->
-        <!-- <div class="catalog-main__wrapper"> -->
-        <!-- <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
-                          Суперціна
-                        </span>
-                      </div> --
-                    <div class="catalog-main__images" href="#">
-                      <img class="catalog-main__img" src="images/popular/epilator.jpg"
-                        alt="Епілятор Braun SensoSmart SES 9/995 BS">
-                    </div>
-                    <div class="catalog-main__sda">
-                      <div class="box">
-                        <a class="catalog-main__link" href="#">
-                          <h3 class="catalog-main__subtitle">
-                            Епілятор Braun SensoSmart SES 9/995 BS
-                          </h3>
-                        </a>
-                      </div>
-                      <div class="catalog-main__inner">
-                        <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                        <p class="catalog-main__code">
-                          Код: 2163859
-                        </p>
-                      </div>
-                      <div class="catalog-main__info">
-                        <div class="catalog-main__flex">
-                          <div class="catalog-main__box">
-                            <div class="catalog-main__old">
-                              9 999
-                              <span>грн</span>
-                            </div>
-                            <div class="catalog-main__saving">
-                              - 2 900
-                              <span>грн</span>
-                            </div>
-                          </div>
-                          <div class="catalog-main__new">
-                            -1 520
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <span>
-                          <button class="catalog-main__btn" type="button">
-                            Купити
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- </div> --
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <!-- </article> 
-              </li>
-            -->
-        <!-- </ul> -->
-        <!-- </div> -->
-        <!-- </div> -->
-
-    </section>
-    <!-- 2 секция -->
-    <!-- <section class="catalog-main section" style="background-color: pink;"> -->
     <section class="catalog-main section">
       <div class="container">
         <div class="title-box">
@@ -5546,11 +4754,13 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <!-- <div class="catalog-main__div"> -->
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
+                      <!-- </div> -->
                       <a class="catalog-main__images" href="#">
                         <img class="catalog-main__img" src="images/catalog-main/cheap/balance.jpg"
                           alt="Епілятор Braun SensoSmart DS 400">
@@ -5613,11 +4823,13 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <!-- <div class="catalog-main__div"> -->
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
+                      <!-- </div> -->
                       <a class="catalog-main__images" href="#">
                         <img class="catalog-main__img" src="images/catalog-main/cheap/filter.jpg"
                           alt="Фільтр для кавомашин DeLonghi 5513292811">
@@ -5680,9 +4892,12 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
+                        </span>
+                        <span class="catalog-main__present">
+                          Подарунок
                         </span>
                       </div>
                       <a class="catalog-main__images" href="#">
@@ -5747,8 +4962,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -5797,8 +5012,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -5833,9 +5047,12 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
+                        </span>
+                        <span class="catalog-main__present">
+                          Подарунок
                         </span>
                       </div>
                       <a class="catalog-main__images" href="#">
@@ -5901,8 +5118,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -5967,8 +5184,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6034,8 +5251,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -6082,8 +5299,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -6118,8 +5334,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6181,13 +5397,14 @@
                   </li>
                 </ul>
               </div>
+
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6247,13 +5464,14 @@
                     <!-- </article> -->
                   </li>
               </div>
+
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6319,8 +5537,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -6367,8 +5585,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -6431,17 +5648,16 @@
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-wrapper catalog-swiper__wrapper">
-
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -6507,8 +5723,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6561,8 +5777,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -6596,8 +5811,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6651,8 +5866,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -6686,8 +5900,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6754,8 +5968,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6822,8 +6036,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6888,8 +6102,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -6955,8 +6169,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -7003,8 +6217,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7039,8 +6252,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7107,8 +6320,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7173,8 +6386,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7240,9 +6453,9 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
-                          Подарунок
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
+                          Суперціна
                         </span>
                       </div>
                       <a class="catalog-main__images" href="#">
@@ -7288,8 +6501,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7353,8 +6565,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7407,8 +6619,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 8698</p>
-                              <p>грн/місяць</p>
+                              від<span>8 698</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7442,11 +6653,11 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -7499,8 +6710,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 8698</p>
-                              <p>грн/місяць</p>
+                              від<span>8 698</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7534,11 +6744,11 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -7591,8 +6801,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 13265</p>
-                              <p>грн/місяць</p>
+                              від<span>13 265</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7626,8 +6835,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7680,8 +6889,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -7716,8 +6924,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7784,8 +6992,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7850,8 +7058,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -7918,8 +7126,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -7966,8 +7174,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -8002,8 +7209,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -8070,8 +7277,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -8136,8 +7343,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
@@ -8203,8 +7410,8 @@
                   <li class="catalog-main__item">
                     <!-- <article class="catalog-main__article"> -->
                     <div class="catalog-main__wrapper">
-                      <div class="catalog-main__div">
-                        <span class="catalog-main__discounts catalog-main__discounts--present">
+                      <div class="catalog-main__discounts">
+                        <span class="catalog-main__present">
                           Подарунок
                         </span>
                       </div>
@@ -8251,8 +7458,7 @@
                               </defs>
                             </svg>
                             <div class="catalog-main__text">
-                              <p>від 2 758</p>
-                              <p>грн/місяць</p>
+                              від<span>2 758</span>грн/місяць
                             </div>
                           </div>
                         </div>
@@ -8780,570 +7986,6 @@
       </div>
     </section>
 
-
-
-    <section class="catalog-main section">
-      <div class="container">
-        <h2 class="catalog-main__title title">
-          Хіт продажу
-        </h2>
-        <div class="slider-slick catalog-main">
-          <div>
-            <div>
-
-              <div class="slider-slick__lis">
-                <div class="slider-slick__li">
-                  <div class="catalog-main__div">
-                    <span class="catalog-main__discounts">
-                      Суперціна
-                    </span>
-                  </div>
-                  <div class="catalog-main__images" href="#">
-                    <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-                      alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-                  </div>
-                  <div class="catalog-main__sda">
-                    <div class="box">
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                          </p>
-                        </h3>
-                      </a>
-                    </div>
-                    <div class="catalog-main__inner">
-                      <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                      <p class="catalog-main__code">
-                        Код: 2235099
-                      </p>
-                    </div>
-                    <div class="catalog-main__info">
-                      <div class="catalog-main__flex">
-                        <div class="catalog-main__box">
-                          <div class="catalog-main__old">
-                            329
-                            <span>грн</span>
-                          </div>
-                          <div class="catalog-main__saving">
-                            -100
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <div class="catalog-main__new">
-                          229
-                          <span>грн</span>
-                        </div>
-                      </div>
-                      <span>
-                        <button class="catalog-main__btn" type="button">
-                          Купити
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <div class="slider-slick__lis">
-                <div class="slider-slick__li">
-                  <div class="catalog-main__div">
-                    <span class="catalog-main__discounts">
-                      Суперціна
-                    </span>
-                  </div>
-                  <div class="catalog-main__images" href="#">
-                    <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg"
-                      alt="Кавоварка DeLonghi EC 685 R">
-                  </div>
-                  <div class="catalog-main__sda">
-                    <div class="catalog-main__link" href="#">
-                      <h3 class="catalog-main__subtitle">
-                        Кавоварка DeLonghi EC 685 R
-                      </h3>
-                    </div>
-                    <div class="catalog-main__inner">
-                      <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                      <p class="catalog-main__code">
-                        Код: 2134129
-                      </p>
-                    </div>
-                    <div class="catalog-main__info">
-                      <div class="catalog-main__flex">
-                        <div class="catalog-main__box">
-                          <div class="catalog-main__old">
-                            7 999
-                            <span>грн</span>
-                          </div>
-                          <div class="catalog-main__saving">
-                            -1 520
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <div class="catalog-main__new">
-                          6 479
-                          <span>грн</span>
-                        </div>
-                      </div>
-                      <span>
-                        <button class="catalog-main__btn" type="button">
-                          Купити
-                        </button>
-                      </span>
-                    </div>
-
-                    <!-- </li> -->
-
-                  </div>
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <div class="slider-slick__lis">
-                <div class="slider-slick__li">
-                  <div class="catalog-main__div">
-                    <span class="catalog-main__discounts">
-                      Суперціна
-                    </span>
-                  </div>
-                  <div class="catalog-main__images" href="#">
-                    <img class="catalog-main__img" src="images/popular/epilator.jpg"
-                      alt="Епілятор Braun SensoSmart SES 9/995 BS">
-                  </div>
-                  <div class="catalog-main__sda">
-                    <div class="box">
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Епілятор Braun SensoSmart SES 9/995 BS
-                        </h3>
-                      </a>
-                    </div>
-                    <div class="catalog-main__inner">
-                      <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                      <p class="catalog-main__code">
-                        Код: 2163859
-                      </p>
-                    </div>
-                    <div class="catalog-main__info">
-                      <div class="catalog-main__flex">
-                        <div class="catalog-main__box">
-                          <div class="catalog-main__old">
-                            9 999
-                            <span>грн</span>
-                          </div>
-                          <div class="catalog-main__saving">
-                            - 2 900
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <div class="catalog-main__new">
-                          -1 520
-                          <span>грн</span>
-                        </div>
-                      </div>
-                      <span>
-                        <button class="catalog-main__btn" type="button">
-                          Купити
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- </div> -->
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <div class="slider-slick__lis">
-                <div class="slider-slick__li">
-                  <div class="catalog-main__div">
-                    <span class="catalog-main__discounts">
-                      Суперціна
-                    </span>
-                  </div>
-                  <div class="catalog-main__images" href="#">
-                    <img class="catalog-main__img" src="images/popular/epilator.jpg"
-                      alt="Епілятор Braun SensoSmart SES 9/995 BS">
-                  </div>
-                  <div class="catalog-main__sda">
-                    <div class="box">
-                      <a class="catalog-main__link" href="#">
-                        <h3 class="catalog-main__subtitle">
-                          Епілятор Braun SensoSmart SES 9/995 BS
-                        </h3>
-                      </a>
-                    </div>
-                    <div class="catalog-main__inner">
-                      <div class="catalog-main__star" data-rateyo-rating="5"></div>
-                      <p class="catalog-main__code">
-                        Код: 2163859
-                      </p>
-                    </div>
-                    <div class="catalog-main__info">
-                      <div class="catalog-main__flex">
-                        <div class="catalog-main__box">
-                          <div class="catalog-main__old">
-                            9 999
-                            <span>грн</span>
-                          </div>
-                          <div class="catalog-main__saving">
-                            - 2 900
-                            <span>грн</span>
-                          </div>
-                        </div>
-                        <div class="catalog-main__new">
-                          -1 520
-                          <span>грн</span>
-                        </div>
-                      </div>
-                      <span>
-                        <button class="catalog-main__btn" type="button">
-                          Купити
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- </div> -->
-                  <div class="catalog-main__inners">
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#compare">
-                        </use>
-                      </svg>
-                    </button>
-                    <button class="catalog-main__btns" type="button">
-                      <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                        <use xlink:href="images/sprite.svg#favorite">
-                        </use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <div class="slider-slicks catalog-main">
-        <div class="slider-slick__li">
-          <div class="catalog-main__div">
-            <span class="catalog-main__discounts">
-              Суперціна
-            </span>
-          </div>
-          <div class="catalog-main__images" href="#">
-            <img class="catalog-main__img" src="images/popular/сontainer.jpg"
-              alt="Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)">
-          </div>
-          <div class="catalog-main__sda">
-            <div class="box">
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  Контейнер харчовий універсальний miFamilia Full wrapped collection 400 мл (6307)
-                  </p>
-                </h3>
-              </a>
-            </div>
-            <div class="catalog-main__inner">
-              <div class="catalog-main__star" data-rateyo-rating="5"></div>
-              <p class="catalog-main__code">
-                Код: 2235099
-              </p>
-            </div>
-            <div class="catalog-main__info">
-              <div class="catalog-main__flex">
-                <div class="catalog-main__box">
-                  <div class="catalog-main__old">
-                    329
-                    <span>грн</span>
-                  </div>
-                  <div class="catalog-main__saving">
-                    -100
-                    <span>грн</span>
-                  </div>
-                </div>
-                <div class="catalog-main__new">
-                  229
-                  <span>грн</span>
-                </div>
-              </div>
-              <span>
-                <button class="catalog-main__btn" type="button">
-                  Купити
-                </button>
-              </span>
-            </div>
-          </div>
-          <div class="catalog-main__inners">
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#compare">
-                </use>
-              </svg>
-            </button>
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#favorite">
-                </use>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="slider-slick__li">
-          <div class="catalog-main__div">
-            <span class="catalog-main__discounts">
-              Суперціна
-            </span>
-          </div>
-          <div class="catalog-main__images" href="#">
-            <img class="catalog-main__img" src="/images/popular/coffee-machine.jpg" alt="Кавоварка DeLonghi EC 685 R">
-          </div>
-          <div class="catalog-main__sda">
-            <div class="catalog-main__link" href="#">
-              <h3 class="catalog-main__subtitle">
-                Кавоварка DeLonghi EC 685 R
-              </h3>
-            </div>
-            <div class="catalog-main__inner">
-              <div class="catalog-main__star" data-rateyo-rating="5"></div>
-              <p class="catalog-main__code">
-                Код: 2134129
-              </p>
-            </div>
-            <div class="catalog-main__info">
-              <div class="catalog-main__flex">
-                <div class="catalog-main__box">
-                  <div class="catalog-main__old">
-                    7 999
-                    <span>грн</span>
-                  </div>
-                  <div class="catalog-main__saving">
-                    -1 520
-                    <span>грн</span>
-                  </div>
-                </div>
-                <div class="catalog-main__new">
-                  6 479
-                  <span>грн</span>
-                </div>
-              </div>
-              <span>
-                <button class="catalog-main__btn" type="button">
-                  Купити
-                </button>
-              </span>
-            </div>
-
-            <!-- </li> -->
-
-          </div>
-          <div class="catalog-main__inners">
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#compare">
-                </use>
-              </svg>
-            </button>
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#favorite">
-                </use>
-              </svg>
-            </button>
-          </div>
-
-        </div>
-
-        <div class="slider-slick__li">
-          <div class="catalog-main__div">
-            <span class="catalog-main__discounts">
-              Суперціна
-            </span>
-          </div>
-          <div class="catalog-main__images" href="#">
-            <img class="catalog-main__img" src="images/popular/epilator.jpg"
-              alt="Епілятор Braun SensoSmart SES 9/995 BS">
-          </div>
-          <div class="catalog-main__sda">
-            <div class="box">
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Епілятор Braun SensoSmart SES 9/995 BS
-                </h3>
-              </a>
-            </div>
-            <div class="catalog-main__inner">
-              <div class="catalog-main__star" data-rateyo-rating="5"></div>
-              <p class="catalog-main__code">
-                Код: 2163859
-              </p>
-            </div>
-            <div class="catalog-main__info">
-              <div class="catalog-main__flex">
-                <div class="catalog-main__box">
-                  <div class="catalog-main__old">
-                    9 999
-                    <span>грн</span>
-                  </div>
-                  <div class="catalog-main__saving">
-                    - 2 900
-                    <span>грн</span>
-                  </div>
-                </div>
-                <div class="catalog-main__new">
-                  -1 520
-                  <span>грн</span>
-                </div>
-              </div>
-              <span>
-                <button class="catalog-main__btn" type="button">
-                  Купити
-                </button>
-              </span>
-            </div>
-          </div>
-          <!-- </div> -->
-          <div class="catalog-main__inners">
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#compare">
-                </use>
-              </svg>
-            </button>
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#favorite">
-                </use>
-              </svg>
-            </button>
-          </div>
-
-        </div>
-
-        <div class="slider-slick__li">
-          <div class="catalog-main__div">
-            <span class="catalog-main__discounts">
-              Суперціна
-            </span>
-          </div>
-          <div class="catalog-main__images" href="#">
-            <img class="catalog-main__img" src="images/popular/epilator.jpg"
-              alt="Епілятор Braun SensoSmart SES 9/995 BS">
-          </div>
-          <div class="catalog-main__sda">
-            <div class="box">
-              <a class="catalog-main__link" href="#">
-                <h3 class="catalog-main__subtitle">
-                  Епілятор Braun SensoSmart SES 9/995 BS
-                </h3>
-              </a>
-            </div>
-            <div class="catalog-main__inner">
-              <div class="catalog-main__star" data-rateyo-rating="5"></div>
-              <p class="catalog-main__code">
-                Код: 2163859
-              </p>
-            </div>
-            <div class="catalog-main__info">
-              <div class="catalog-main__flex">
-                <div class="catalog-main__box">
-                  <div class="catalog-main__old">
-                    9 999
-                    <span>грн</span>
-                  </div>
-                  <div class="catalog-main__saving">
-                    - 2 900
-                    <span>грн</span>
-                  </div>
-                </div>
-                <div class="catalog-main__new">
-                  -1 520
-                  <span>грн</span>
-                </div>
-              </div>
-              <span>
-                <button class="catalog-main__btn" type="button">
-                  Купити
-                </button>
-              </span>
-            </div>
-          </div>
-          <!-- </div> -->
-          <div class="catalog-main__inners">
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#compare">
-                </use>
-              </svg>
-            </button>
-            <button class="catalog-main__btns" type="button">
-              <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
-                <use xlink:href="images/sprite.svg#favorite">
-                </use>
-              </svg>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <section class="partners section">
       <div class="container">

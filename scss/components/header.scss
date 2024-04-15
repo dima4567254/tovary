@@ -6,17 +6,18 @@
   padding-bottom: rem(5);
   padding-left: rem(5);
   padding-right: rem(5);
-  transform: translateY(0%);
+  // transform: translateY(0%);
+  margin-top: 0;
   transition: all .5s; //!!! выставить как надо
   overflow: hidden; //!!!временно
   cursor: pointer; //потом проверить и на кнопке и тут можно одним
 
   &.active {
-    transition: all .5s;
-    transform: translateY(-100%);
-    margin-top: rem(-35px);
-    animation-name: my-animation;
-    animation-duration: .5s;
+    // transition: all .5s;
+    // transform: translateY(-100%);
+    margin-top: -35px;
+    // animation-name: my-animation;
+    // animation-duration: .5s;
   }
 
   &__items {
@@ -47,14 +48,16 @@
     border: none;
     padding-left: rem(14);
     padding-right: rem(13);
-
-    &.active {
-      animation-name: my-animation2;
-      animation-duration: 5s;
-    }
   }
 
   &__svg {
+    &.active {
+      // animation-name: my-animation2;
+      // animation-duration: 5s;
+      transition: all 0.5s;
+      transform: rotate(0deg);
+    }
+
     transform: rotate(180deg);
   }
 }

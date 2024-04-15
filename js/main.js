@@ -6,28 +6,28 @@ console.log('work6454');
 //   $('select,filter-selects__sort').styler();
 // }, 100)
 
-$('.catalog-slider').slick({
-  slidesToShow: 4,  /* количество слайдов на показ*/
-  slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 3000,
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2,
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 577,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       // slidesToScroll: 2,
-  //     }
-  //   },
-  // ]
-});
+// $('.catalog-slider').slick({
+//   slidesToShow: 4,  /* количество слайдов на показ*/
+//   slidesToScroll: 1,
+//   // autoplay: true,
+//   // autoplaySpeed: 3000,
+//   // responsive: [
+//   //   {
+//   //     breakpoint: 768,
+//   //     settings: {
+//   //       slidesToShow: 2,
+//   //       slidesToScroll: 2,
+//   //     }
+//   //   },
+//   //   {
+//   //     breakpoint: 577,
+//   //     settings: {
+//   //       slidesToShow: 1,
+//   //       // slidesToScroll: 2,
+//   //     }
+//   //   },
+//   // ]
+// });
 
 const sliderIntro = new Swiper('.sliderIntro', {
   slidesPerView: 3,
@@ -170,13 +170,14 @@ function Marquee(selector, speed) {
 window.addEventListener('load', () => Marquee('.marquee', 0.4));
 // для движения полоски
 
-// let marquee = document.querySelector('.marquee')
-// let marqueeBtn = document.querySelector('.marquee__btn')
+
 
 $('.marquee__btn').on('click', function () {
-  $('.marquee, .marquee__btn').toggleClass('active');
-  // кнопка закрыть marquee
+  $('.marquee, .marquee__svg').toggleClass('active');
 });
+
+// скрыть полоску marquee
+
 
 const items = document.querySelectorAll('.menu__item-rub');
 const lists = document.querySelectorAll('.menu-none');
