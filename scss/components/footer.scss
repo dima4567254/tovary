@@ -141,18 +141,24 @@
     border: 1px solid #4f4f4f;
     border-radius: 6px;
     line-height: 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // --
+    display: grid;
+    place-content: center;
     width: rem(50);
     height: rem(50);
   }
 }
 
 .telegram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  display: grid;
+  place-content: center;
   border-radius: 50%;
   background-color: #37aee2;
   width: rem(40);
@@ -161,7 +167,7 @@
   right: 3%;
   bottom: 3%;
   z-index: 300;
-  transition: .4s ease;//!!!
+  transition: .4s ease; //!!!
 
   &:focus {
     color: $focus;
@@ -169,7 +175,7 @@
 
   &:hover {
     box-shadow: 0 0 10px 10px #b9eaff;
-    transition: .4s ease;//!!!
+    transition: .4s ease; //!!!
     bottom: 35px;
   }
 
@@ -194,7 +200,7 @@
   cursor: pointer;
   z-index: 300;
   transition: .4s ease; //!!!
- 
+
 
   &:focus {
     color: $focus;
