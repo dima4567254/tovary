@@ -6,23 +6,17 @@
   padding-bottom: rem(5);
   padding-left: rem(5);
   padding-right: rem(5);
-  // transform: translateY(0%);
   margin-top: 0;
   transition: all .5s; //!!! выставить как надо
   overflow: hidden; //!!!временно
   cursor: pointer; //потом проверить и на кнопке и тут можно одним
 
   &.active {
-    // transition: all .5s;
-    // transform: translateY(-100%);
-    margin-top: -35px;
-    // animation-name: my-animation;
-    // animation-duration: .5s;
+    margin-top: -3.5rem;
   }
 
   &__items {
     display: flex;
-    // display: grid;
     font-size: rem(19);
     @include line-height(19, 24);
     width: max-content;
