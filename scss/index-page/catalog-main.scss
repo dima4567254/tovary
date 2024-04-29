@@ -183,11 +183,12 @@
   }
 
   &__credit {
-    // display: grid;
-    // grid-template-columns: rem(17) 1fr;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: rem(17) 1fr;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     // grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
     font-size: rem(16);
     @include line-height(16, 22);
