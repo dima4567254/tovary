@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="css/style.min.css?_v=20230727015200">
 </head>
 
-<!-- на чем остановился -->
-<!-- header проверил на грид -->
-<!-- catalog-main  проверил-->
-<!-- shares проверил-->
-<!-- articles проверил-->
+<!-- остоновился адаптив хедерпа -->
+<!-- есть желание удалить все коменты -->
+
+<!-- делать адаптив -->
+
 
 <!-- звезды -->
 
@@ -27,7 +27,7 @@
 /// 3 пункт меню
 переделать все в рем удалить лишнии коменты
 переделать все в мексинах -->
-<!-- удалить форм сталер -->
+
 <!-- в меню и в майн каталоге естьт не прааильные названия limnks hiden убрать -->
 <!-- поставить в интро 2 боковые картинки как бнадо -->
 
@@ -76,8 +76,6 @@
 
 <!--
   удалить итеммс второй секция и ниже
-переделать все на грид
- анимация полоски
 
  заблокировать текст плашек в каталоге
  -->
@@ -218,7 +216,15 @@
     <div class="container">
       <div class="header__wrapper">
         <a class="header__logo logo" href="#">
-          <img class="logo__img" src="images/logo_header.svg" alt="Логотип">
+          <!-- <picture>
+            <source srcset="images/logo_sm.svg"  media="(max-width: 992px)">
+            <img class="services__img" src="images/logo_header.svg" alt="монітори">
+          </picture> -->
+          <picture class="advantages__picture">
+            <!-- <source srcset="images/logo_sm.svg" media="(max-width: 992px)"> -->
+            <!-- <img class="advantages__img" src="images/logo_header.svg" alt="переваги"> -->
+            <img class="advantages__img" src="images/logo_sm.svg" alt="переваги">
+          </picture>
         </a>
         <button class="header__btn" type="button">
           <svg class="header__svg" width="24px" height="24px">
@@ -3873,49 +3879,8 @@
                 </a>
               </ul>
             </div>
-
-
-
           </nav>
-
         </button>
-        <!-- <ul class="menu__items hidden menu__none menu-none">
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Варильні поверхні
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Варильні поверхні
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Духові шафи
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Витяжки
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Вбудовані мікрохвильові печі
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Вбудовувані посудомийні машини
-                              </a>
-                            </li>
-                            <li class="menu__item">
-                              <a class="menu__link" href="#">
-                                Вбудовувані холодильники і морозильники
-                              </a>
-                            </li>
-                          </ul> -->
 
         <a class="header__link" href="#">
           <svg class="header__svg" width="18px" height="18px" fill="#bcbcbc">
@@ -3957,7 +3922,6 @@
             </a>
           </div>
         </button>
-        <!-- </div> -->
 
         <div class="dropdown-tel">
           <div class="dropdown-tel__number">
@@ -4048,7 +4012,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <!-- <main class="main">
     <section class="intro">
       <h1 class="sr-only">
         ToVary - офіційний інтернет-магазин побутової техніки в Україні
@@ -4188,12 +4152,12 @@
                       </svg>
                     </button>
                   </div>
-                  <!-- </article> -->
+                  <!-- </article> --
                 </div>
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> -->
+                  <!-- <article class="catalog-main__article"> --
                   <div class="catalog-main__wrapper">
                     <div class="catalog-main__discounts">
                       <span class="catalog-main__present">
@@ -4240,7 +4204,7 @@
                           </button>
                         </span>
                       </div>
-                      <!-- </li> -->
+                      <!-- </li> --
                     </div>
                   </div>
                   <div class="catalog-main__inners">
@@ -4258,7 +4222,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- </article> -->
+                <!-- </article> --
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
@@ -4385,12 +4349,12 @@
                       </svg>
                     </button>
                   </div>
-                  <!-- </article> -->
+                  <!-- </article> --
                 </div>
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> -->
+                  <!-- <article class="catalog-main__article"> --
                   <div class="catalog-main__wrapper">
                     <div class="catalog-main__discounts">
                       <span class="catalog-main__price">
@@ -4437,7 +4401,7 @@
                           </button>
                         </span>
                       </div>
-                      <!-- </li> -->
+                      <!-- </li> --
                     </div>
                   </div>
                   <div class="catalog-main__inners">
@@ -4455,7 +4419,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- </article> -->
+                <!-- </article> --
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
@@ -4583,12 +4547,12 @@
                       </svg>
                     </button>
                   </div>
-                  <!-- </article> -->
+                  <!-- </article> --
                 </div>
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
-                  <!-- <article class="catalog-main__article"> -->
+                  <!-- <article class="catalog-main__article"> --
                   <div class="catalog-main__wrapper">
                     <div class="catalog-main__discounts">
                       <span class="catalog-main__price">
@@ -4636,7 +4600,7 @@
                           </button>
                         </span>
                       </div>
-                      <!-- </li> -->
+                      <!-- </li> --
                     </div>
                   </div>
                   <div class="catalog-main__inners">
@@ -4654,7 +4618,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- </article> -->
+                <!-- </article> --
               </li>
               <li class="swiper-slide">
                 <div class="catalog-main__item">
@@ -4759,15 +4723,15 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
-                      <!-- <div class="catalog-main__div"> -->
+                      <!-- <div class="catalog-main__div"> --
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
-                      <!-- </div> -->
+                      <!-- </div> --
                       <a class="catalog-main__images" href="#">
                         <img class="catalog-main__img" src="images/catalog-main/cheap/balance.jpg"
                           alt="Епілятор Braun SensoSmart DS 400">
@@ -4821,22 +4785,22 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
-                      <!-- <div class="catalog-main__div"> -->
+                      <!-- <div class="catalog-main__div"> --
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
                           Суперціна
                         </span>
                       </div>
-                      <!-- </div> -->
+                      <!-- </div> --
                       <a class="catalog-main__images" href="#">
                         <img class="catalog-main__img" src="images/catalog-main/cheap/filter.jpg"
                           alt="Фільтр для кавомашин DeLonghi 5513292811">
@@ -4890,14 +4854,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -4960,14 +4924,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -4997,15 +4961,15 @@
                           </div>
                           <div class="catalog-main__credit">
                             <!-- остановился на переделке grid хедер доделал сделать сесде текст обертки и зночеки сделать уже!!! -->
-                            <!-- сделать комит -->
-                            <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
+  <!-- сделать комит -->
+  <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                                       <use xlink:href="images/sprite.svg#credit">
                                       </use>
                                     </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                       <use xlink:href="images/sprite.svg#favorite">
                                       </use>
-                                    </svg> -->
+                                    </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -5044,7 +5008,7 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
@@ -5052,7 +5016,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5116,14 +5080,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5183,13 +5147,13 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5249,14 +5213,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__present">
@@ -5289,10 +5253,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -5331,7 +5295,7 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
@@ -5339,7 +5303,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5400,7 +5364,7 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
@@ -5408,7 +5372,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5468,14 +5432,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
 
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5535,14 +5499,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__present">
@@ -5575,10 +5539,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -5617,19 +5581,19 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
-              <!-- </ul> -->
+              <!-- </ul> --
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- 3 секция -->
+    <!-- 3 секция --
     <section class="catalog-main section">
-      <!-- <section class="catalog-main section" style="background-color: yellow;"> -->
+      <!-- <section class="catalog-main section" style="background-color: yellow;"> --
       <div class="container">
         <div class="title-box">
           <h2 class="title-box__title title">
@@ -5658,7 +5622,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5721,14 +5685,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5770,7 +5734,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -5809,14 +5773,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5859,7 +5823,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -5898,14 +5862,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -5965,15 +5929,15 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
-              <!-- выше нужные -->
+              <!-- выше нужные --
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6034,14 +5998,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6101,13 +6065,13 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6167,14 +6131,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__present">
@@ -6207,10 +6171,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6249,7 +6213,7 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
@@ -6257,7 +6221,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6318,14 +6282,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6385,13 +6349,13 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6451,14 +6415,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6491,10 +6455,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6533,21 +6497,21 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
-                  </li>
-                </ul>
-              </div>
-              <!-- </ul> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 4 секция
+                    <!-- </article> --
+  </li>
+  </ul>
+  </div>
+  <!-- </ul> --
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- 4 секция
        готово оппоменять картинки выше 
-    -->
+    --
     <section class="catalog-main section">
-      <!-- <section class="catalog-main section" style="background-color: green;"> -->
+      <!-- <section class="catalog-main section" style="background-color: green;"> --
       <div class="container">
         <h2 class="catalog-main__title title">
           Ми рекомендуємо
@@ -6570,7 +6534,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6612,7 +6576,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6651,14 +6615,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6703,7 +6667,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6742,14 +6706,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6794,7 +6758,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6833,14 +6797,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6882,7 +6846,7 @@
                             <!-- <svg class="catalog-main__svg" width="17px" height="16px" fill="#bcbcbc">
                               <use xlink:href="images/sprite.svg#credit">
                               </use>
-                            </svg> -->
+                            </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -6921,15 +6885,15 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
-              <!-- выше нужные -->
+              <!-- выше нужные --
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -6990,14 +6954,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -7057,13 +7021,13 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -7124,14 +7088,14 @@
                       </button>
                     </div>
                     <!-- </article> -->
-                    <!-- </article> -->
+  <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__present">
@@ -7164,10 +7128,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -7206,7 +7170,7 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
@@ -7214,7 +7178,7 @@
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -7275,14 +7239,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -7342,13 +7306,13 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__price">
@@ -7408,14 +7372,14 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <ul class="catalog-main__items">
                   <li class="catalog-main__item">
-                    <!-- <article class="catalog-main__article"> -->
+                    <!-- <article class="catalog-main__article"> --
                     <div class="catalog-main__wrapper">
                       <div class="catalog-main__discounts">
                         <span class="catalog-main__present">
@@ -7448,10 +7412,10 @@
                                                   <use xlink:href="images/sprite.svg#credit">
                                                   </use>
                                                 </svg> -->
-                            <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
+  <!-- <svg class="catalog-main__svg" width="25px" height="25px" fill="#bcbcbc">
                                                   <use xlink:href="images/sprite.svg#favorite">
                                                   </use>
-                                                </svg> -->
+                                                </svg> --
                             <svg class="catalog-main__svg" width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="17" height="16" fill="url(#pattern0)" />
@@ -7490,11 +7454,11 @@
                         </svg>
                       </button>
                     </div>
-                    <!-- </article> -->
+                    <!-- </article> --
                   </li>
                 </ul>
               </div>
-              <!-- </ul> -->
+              <!-- </ul> --
             </div>
           </div>
         </div>
@@ -7525,13 +7489,13 @@
                 </use>
               </svg>
             </div>
-            <!-- <div class="container"> -->
+            <!-- <div class="container"> --
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <!-- <div class="shares__items"> -->
+                <!-- <div class="shares__items"> --
                 <a class="shares__link" href="#">
-                  <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+                  <!-- <div class="shares__item"> --
+                  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/coffee-promotion.jpg" alt="
 Купуючи кавоварку або кавомашину ﻿DeLonghi отримайте 1 кг. кави в зерн...">
@@ -7561,17 +7525,17 @@
                       27 днів
                     </div>
                   </div>
-                  <!-- </div> -->
+                  <!-- </div> --
                 </a>
                 <!-- </div> -->
-                <!-- </article> -->
+  <!-- </article> --
               </li>
 
               <li class="swiper-slide">
                 <a class="shares__link" href="#">
                   <!-- <div class="shares__items"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/winter-discount.jpg" alt="Зимові знижки!">
                   </div>
@@ -7588,7 +7552,7 @@
                         <h3 class="shares__subtitle">
                           Зимові знижки!
                         </h3>
-                      </div> -->
+                      </div> --
                     <div class="shares__text">
                       <p>
                         Купуйте у нас на сайті один із представлених нижче акційних товарів та отримайте гарантовану
@@ -7606,15 +7570,15 @@
                     </div>
                   </div>
                   <!-- </div> -->
-                  <!-- </div> -->
+  <!-- </div> --
                 </a>
               </li>
               <li class="swiper-slide">
                 <a class="shares__link" href="#">
                   <!-- <div class="shares__items"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/action-kitchen-machine.jpg" alt="
             При купівлі кухонної машини отримай у подарунок ківш Polaris Rialto-16...">
@@ -7633,7 +7597,7 @@
                           <h3 class="shares__subtitle">
                             При купівлі кухонної машини отримай у подарунок ківш Polaris Rialto-16...
                           </h3>
-                        </div> -->
+                        </div> --
                     <div class="shares__text">
                       <p>
                         * Під подарунком мається на увазі придбання товару за 1 гривню (в т.ч. ПДВ). Кількість
@@ -7651,15 +7615,15 @@
                     </div>
                   </div>
                   <!-- </div> -->
-                  <!-- </div> -->
-                  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> --
                 </a>
               </li>
               <li class="swiper-slide">
-                <!-- <div class="shares__items"> -->
+                <!-- <div class="shares__items"> --
                 <a class="shares__link" href="#">
                   <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/coffee-promotion.jpg" alt="
 Купуючи кавоварку або кавомашину ﻿DeLonghi отримайте 1 кг. кави в зерн...">
@@ -7689,17 +7653,17 @@
                       27 днів
                     </div>
                   </div>
-                  <!-- </div> -->
+                  <!-- </div> --
                 </a>
                 <!-- </div> -->
-                <!-- </article> -->
+  <!-- </article> --
               </li>
 
               <li class="swiper-slide">
                 <a class="shares__link" href="#">
                   <!-- <div class="shares__items"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/winter-discount.jpg" alt="Зимові знижки!">
                   </div>
@@ -7716,7 +7680,7 @@
                         <h3 class="shares__subtitle">
                           Зимові знижки!
                         </h3>
-                      </div> -->
+                      </div> --
                     <div class="shares__text">
                       <p>
                         Купуйте у нас на сайті один із представлених нижче акційних товарів та отримайте гарантовану
@@ -7734,16 +7698,16 @@
                     </div>
                   </div>
                   <!-- </div> -->
-                  <!-- </div> -->
+  <!-- </div> --
                 </a>
               </li>
 
               <li class="swiper-slide">
                 <a class="shares__link" href="#">
                   <!-- <div class="shares__items"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <div class="shares__item"> -->
-                  <!-- <article class="shares__article"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <div class="shares__item"> -->
+  <!-- <article class="shares__article"> --
                   <div class="shares__images">
                     <img class="shares__img" src="images/shares/action-kitchen-machine.jpg" alt="
             При купівлі кухонної машини отримай у подарунок ківш Polaris Rialto-16...">
@@ -7762,7 +7726,7 @@
                           <h3 class="shares__subtitle">
                             При купівлі кухонної машини отримай у подарунок ківш Polaris Rialto-16...
                           </h3>
-                        </div> -->
+                        </div> --
                     <div class="shares__text">
                       <p>
                         * Під подарунком мається на увазі придбання товару за 1 гривню (в т.ч. ПДВ). Кількість
@@ -7780,13 +7744,13 @@
                     </div>
                   </div>
                   <!-- </div> -->
-                  <!-- </div> -->
-                  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> --
                 </a>
               </li>
             </ul>
           </div>
-          <!-- </div> -->
+          <!-- </div> --
         </div>
       </div>
     </section>
@@ -8325,7 +8289,7 @@ c69 -53 134 -100 143 -105 24 -12 58 3 65 31 3 13 47 209 97 436 84 381 90
     <!-- <svg class="telegram__svg" width="60px" height="30px" fill="#ffffff">
       <use xlink:href="images/sprite.svg#telegram">
       </use>
-    </svg> -->
+    </svg> --
   </a>
 
   <div class="scroll">
@@ -8333,9 +8297,13 @@ c69 -53 134 -100 143 -105 24 -12 58 3 65 31 3 13 47 209 97 436 84 381 90
       <use xlink:href="images/sprite.svg#arrow_green">
       </use>
     </svg>
-  </div>
+  </div> -->
 
-  <script src="js/avif.js?_v=20240128190727"></script>
+
+  <script src="js/avif.js?_v=20240128190727">
+
+    console.log('я работаю');
+  </script>
   <script src="js/main.min.js?_v=20240206221204"></script>
 
 </body>
