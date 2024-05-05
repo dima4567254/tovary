@@ -1,4 +1,16 @@
 console.log('work6454');
+
+// $('.menu__btn').on('click', function () {
+//   $('.menu__btn').toggleClass('active');
+
+// });
+$('.header__burger').on('click', function () {
+  $('.header-mobi').toggleClass('header-mobi--active');
+
+  /*$('.header__logo').toggleClass('menu__list--active');
+  $('.intro__btn').toggleClass('menu__list--active');*/
+});
+
 // alert("Hello! I am an alert box!!");
 
 // $('select,dropdown-link__select').styler();
