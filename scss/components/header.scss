@@ -411,10 +411,13 @@
 }
 
 .header-mobi {
+  display: none;
 
   @media (max-width: 992px) {
-    transform: translateY(-200%);
+    // transform: translateY(-200%);
     // transform: translateZ(-200%);
+    transform: translateX(-200%);
+    display: block;
     position: absolute;
     top: 0;
     width: 100%;
@@ -427,8 +430,9 @@
     // padding: 115px 0 20px;
 
     &.header-mobi--active {
-      transform: translateY(0%);
+      // transform: translateY(0%);
       // transform: translateZ(0%);
+      transform: translateX(0%);
       // display: block;
     }
 
@@ -436,7 +440,7 @@
       display: flex;
     }
 
-    &__iiner {
+    &__inner {
       display: flex;
       align-items: center;
       width: 100%;
