@@ -4,12 +4,20 @@ console.log('work6454');
 //   $('.menu__btn').toggleClass('active');
 
 // });
-$('.header__burger').on('click', function () {
-  $('.header-mobi').toggleClass('header-mobi--active');
+// $('.header-burger').on('click', function () {
+//   $('.header-mobi').toggleClass('header-burger--active');
+// });
 
-  /*$('.header__logo').toggleClass('menu__list--active');
-  $('.intro__btn').toggleClass('menu__list--active');*/
+$('.header-burger').on('click', function () {
+  $('.header-mobi, .header-burger').toggleClass('active');
 });
+// $('.header-burger').on('click', function () {
+//   $(' .header-burger').toggleClass('active');
+// });
+
+// $('.header-mobi__burger').on('click', function () {
+//   $('.header-mobi').toggleClass('header-mobi--active');
+// });
 
 // alert("Hello! I am an alert box!!");
 

@@ -171,13 +171,365 @@
     color: $white;
   }
 
-  &__burger {
+  &__burger {}
+
+
+  .logo {
+    line-height: 0;
+
+    &__img {
+      object-fit: cover;
+      width: rem(160);
+      height: rem(40);
+
+      @media (max-width: 992px) {
+        object-fit: contain;
+        width: 45px;
+        height: 35px
+      }
+    }
+
+    &__images {
+      object-fit: cover;
+      width: rem(160);
+      height: rem(40);
+    }
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    left: 0;
+    top: 72%;
+    z-index: 10;
+    max-height: rem(450);
+    border-radius: 0px 0px 8px 8px;
+    filter: drop-shadow(0px 15px 12px rgba(33, 33, 33, 0.113));
+    border-top: 1px solid #E0E0E0;
+    z-index: 5;
+
+    &__right {
+      width: 100%;
+    }
+
+    &__info,
+    &__left {
+      border-right: 1px solid #E0E0E0;
+      padding-top: rem(20);
+      padding-bottom: rem(40);
+      overflow: hidden;
+      // display: flex;
+      display: grid;
+      min-width: rem(270);
+    }
+
+    &__info {
+      max-height: rem(450); //возможно можно убрать но только если предпологать что списке мало пунктов будет всегда
+    }
+
+    &__items {
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: rem(270);
+    }
+
+    &__item {
+      padding-bottom: rem(10);
+      padding-top: rem(10);
+      padding-left: rem(40);
+      padding-right: rem(40);
+      transition: background-color .5s;
+
+      @media (max-width: 992px) {
+        width: 100%;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+
+      &:focus {
+        color: $focus;
+      }
+
+      &:hover {
+        background: rgba(0, 204, 20, 0.1);
+        color: #219653;
+
+        .menu__svg path {
+          fill: #219653;
+        }
+      }
+
+      &:active {
+        color: $active;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: rem(17);
+      max-width: rem(170);
+
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+
+    &--all {
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      padding-top: rem(25);
+      padding-bottom: rem(25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // лутше на флекс
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      font-weight: 600;
+      color: #1ead2b;
+      font-size: rem(16);
+      width: 100%;
+    }
+
+    &__link span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+
+    &__icon {
+      margin-right: rem(15);
+    }
+
+    &__items-list {
+
+      &:not(:last-child) {
+        margin-right: rem(150);
+      }
+    }
+
+    &__item-list {
+      font-size: rem(16);
+      @include line-height(16, 19);
+      transition: color .5s;
+
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+
+      &:hover {
+        color: #219653;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      // display: grid;
+    }
+
+    &__box {
+      @include adaptiveValue("padding-bottom", 30, 10);
+      @include adaptiveValue("padding-top", 30, 10);
+      @include adaptiveValue("padding-left", 40, 20);
+      @include adaptiveValue("padding-right", 40, 20);
+      height: rem(375);
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      // display: grid;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      // justify-content: end;
+    }
+
+    // упарядочить по порядку
+  }
+
+  .header-mobi {
     display: none;
 
     @media (max-width: 992px) {
-      // display: block;
-      // order: 1;
-      //margin-left: 40px;
+      transform: translateX(-200%);
+      display: block;
+      position: absolute;
+      top: 4%;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      // background-color: #edf1f4;
+      transition: transform 1s;
+
+      &.active {
+        transform: translateX(0%);
+      }
+
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__inner {
+        display: flex;
+        align-items: center;
+      }
+
+      &__top {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background: #1ead2b;
+      }
+
+      &__logo {
+        width: 122px;
+        height: 30px;
+        object-fit: cover;
+      }
+
+      &__burger {
+        margin-right: 40px;
+      }
+
+      &__items {}
+
+      &__item {
+
+
+        // justify-content: space-between;
+      }
+
+      &__link {
+        line-height: 0;
+        padding: 14px;
+        border-bottom: 1px solid #e0e0e0;
+        background: white;
+        display: block;
+        font-size: rem(20); //свой размер
+        // align-items: center;
+      }
+
+      &__svg {
+        margin-right: 20px;
+      }
+
+      &__wrapper {}
+
+      &__number {
+        width: 2em;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1ead2b;
+        border-radius: 50%;
+        margin-left: 1em;
+        @include line-height(12, 12);
+        color: $white;
+        // делал списки
+      }
+    }
+
+    // &--active {
+    //   transform: translateY(0%);
+    //   display: block;
+    // }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .language {
+    background-color: $white;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-size: 16px;
+    @include line-height(16, 22);
+    color: #333333;
+    cursor: pointer;
+    // padding-left: rem(8);
+    padding-right: rem(20);
+    position: relative;
+
+    &:hover {
+      .language__wrapper {
+        opacity: 1;
+        overflow: visible;
+        z-index: 10;
+      }
+
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: 20%;
+      height: rem(7);
+      width: rem(7);
+      background-image: url('../images/sprite/arrow_white3.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: rotate(0deg);
+      transition: all .5s; //!!!
+    }
+
+    &__wrapper {
+      z-index: -100;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .5s; //!!!
+      background: $white;
+      box-shadow: 0px 10px 12px rgba(33, 33, 33, 0.16);
+      border-radius: 0px 0px 8px 8px;
+    }
+
+    &__link {
+      transition: color .5s;
+      display: block;
+      padding: rem(10);
+
+      &:focus {
+        color: $focus;
+      }
+
+      &:hover {
+        color: #219653;
+        background: rgba(0, 51, 5, 0.1);
+      }
+
+      &:active {
+        color: $active;
+      }
+    }
+  }
+
+  .header-burger {
+    display: none;
+
+    @media (max-width: 992px) {
       width: 30px;
       height: 22px;
       position: relative;
@@ -186,22 +538,6 @@
       align-items: center;
       background-color: transparent;
       padding: 0;
-      z-index: 10;
-
-      &.active span {
-        transform: scale(0);
-
-      }
-
-      &.active:before {
-        transform: rotate(45deg);
-        top: 9px;
-      }
-
-      &.active::after {
-        transform: rotate(-45deg);
-        bottom: 9px;
-      }
 
       span,
       &::before,
@@ -211,7 +547,7 @@
         content: '';
         height: 3px;
         width: 100%;
-        background-color: $btn-menu;
+        background-color: #000000;
       }
 
       &::before,
@@ -228,320 +564,34 @@
         bottom: 0;
       }
     }
-  }
-}
 
+    &--mobi {
+      margin-right: 30px;
+      // color: #ffffff;
+      background-color: transparent;
 
-.logo {
-  line-height: 0;
+      &.active {
 
-  &__img {
-    object-fit: cover;
-    width: rem(160);
-    height: rem(40);
+        span,
+        &::before,
+        &::after {
+          background-color: #ffffff;
+        }
 
-    @media (max-width: 992px) {
-      object-fit: contain;
-      width: 45px;
-      height: 35px;
-    }
-  }
-}
+        & span {
+          transform: scale(0);
+        }
 
-.menu {
-  display: none;
-  position: absolute;
-  background-color: $white;
-  width: 100%;
-  left: 0;
-  top: 72%;
-  z-index: 10;
-  max-height: rem(450);
-  border-radius: 0px 0px 8px 8px;
-  filter: drop-shadow(0px 15px 12px rgba(33, 33, 33, 0.113));
-  border-top: 1px solid #E0E0E0;
-  z-index: 5;
+        &:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
 
-  &__right {
-    width: 100%;
-  }
-
-  &__info,
-  &__left {
-    border-right: 1px solid #E0E0E0;
-    padding-top: rem(20);
-    padding-bottom: rem(40);
-    overflow: hidden;
-    // display: flex;
-    display: grid;
-    min-width: rem(270);
-  }
-
-  &__info {
-    max-height: rem(450); //возможно можно убрать но только если предпологать что списке мало пунктов будет всегда
-  }
-
-  &__items {
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: 100%;
-    max-width: rem(270);
-  }
-
-  &__item {
-    padding-bottom: rem(10);
-    padding-top: rem(10);
-    padding-left: rem(40);
-    padding-right: rem(40);
-    transition: background-color .5s;
-
-    @media (max-width: 992px) {
-      width: 100%;
-      text-align: center;
-
-      &:not(:last-child) {
-        margin-right: 0;
+        &::after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
       }
-    }
-
-    &:focus {
-      color: $focus;
-    }
-
-    &:hover {
-      background: rgba(0, 204, 20, 0.1);
-      color: #219653;
-
-      .menu__svg path {
-        fill: #219653;
-      }
-    }
-
-    &:active {
-      color: $active;
-    }
-  }
-
-  &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: rem(17);
-    max-width: rem(170);
-
-    @media (max-width: 992px) {
-      display: block;
-    }
-  }
-
-  &--all {
-    border-top: 1px solid #e0e0e0;
-    text-align: center;
-    padding-top: rem(25);
-    padding-bottom: rem(25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // лутше на флекс
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    font-weight: 600;
-    color: #1ead2b;
-    font-size: rem(16);
-    width: 100%;
-  }
-
-  &__link span {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-  }
-
-  &__icon {
-    margin-right: rem(15);
-  }
-
-  &__items-list {
-
-    &:not(:last-child) {
-      margin-right: rem(150);
-    }
-  }
-
-  &__item-list {
-    font-size: rem(16);
-    @include line-height(16, 19);
-    transition: color .5s;
-
-    &:not(:last-child) {
-      margin-bottom: rem(20);
-    }
-
-    &:hover {
-      color: #219653;
-    }
-  }
-
-  &__inner {
-    display: flex;
-    // display: grid;
-  }
-
-  &__box {
-    @include adaptiveValue("padding-bottom", 30, 10);
-    @include adaptiveValue("padding-top", 30, 10);
-    @include adaptiveValue("padding-left", 40, 20);
-    @include adaptiveValue("padding-right", 40, 20);
-    height: rem(375);
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    // display: grid;
-  }
-
-  &__list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    // justify-content: end;
-  }
-
-  // упарядочить по порядку
-}
-
-.header-mobi {
-  display: none;
-
-  @media (max-width: 992px) {
-    // transform: translateY(-200%);
-    // transform: translateZ(-200%);
-    transform: translateX(-200%);
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    z-index: 5;
-    background-color: #edf1f4;
-    transition: transform 1s;
-    // padding: 115px 0 20px;
-
-    &.header-mobi--active {
-      // transform: translateY(0%);
-      // transform: translateZ(0%);
-      transform: translateX(0%);
-      // display: block;
-    }
-
-    &__wrapper {
-      display: flex;
-    }
-
-    &__inner {
-      display: flex;
-      align-items: center;
-      width: 100%;
-    }
-
-    &__burger {}
-
-    &__items {}
-
-    &__item {}
-
-    &__link {}
-
-    &__svg {}
-
-    &__wrapper {}
-
-    &__number {}
-  }
-
-  // &--active {
-  //   transform: translateY(0%);
-  //   display: block;
-  // }
-}
-
-
-
-
-
-.hidden {
-  display: none;
-}
-
-.language {
-  background-color: $white;
-  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  font-size: 16px;
-  @include line-height(16, 22);
-  color: #333333;
-  cursor: pointer;
-  // padding-left: rem(8);
-  padding-right: rem(20);
-  position: relative;
-
-  &:hover {
-    .language__wrapper {
-      opacity: 1;
-      overflow: visible;
-      z-index: 10;
-    }
-
-    &::before {
-      transform: rotate(180deg);
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 40%;
-    right: 20%;
-    height: rem(7);
-    width: rem(7);
-    background-image: url('../images/sprite/arrow_white3.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transform: rotate(0deg);
-    transition: all .5s; //!!!
-  }
-
-  &__wrapper {
-    z-index: -100;
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all .5s; //!!!
-    background: $white;
-    box-shadow: 0px 10px 12px rgba(33, 33, 33, 0.16);
-    border-radius: 0px 0px 8px 8px;
-  }
-
-  &__link {
-    transition: color .5s;
-    display: block;
-    padding: rem(10);
-
-    &:focus {
-      color: $focus;
-    }
-
-    &:hover {
-      color: #219653;
-      background: rgba(0, 51, 5, 0.1);
-    }
-
-    &:active {
-      color: $active;
     }
   }
 }
