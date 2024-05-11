@@ -23,6 +23,7 @@ body {
   @include line-height(14, 22);
   font-family: 'NotoSans_Condensed';
   // color: $default;
+  overflow: hidden;
 }
 
 .sr-only {
@@ -171,12 +172,13 @@ body {
 //         }
 //     }
 // }
-
-* {
-  // scrollbar-width: auto;
-  scrollbar-color: #C0C0C0 #EFEFF1;
-  //для потдержки скрола в фарфокс
-}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// * {
+//   // scrollbar-width: auto;
+//   scrollbar-color: #C0C0C0 #EFEFF1;
+//   //для потдержки скрола в фарфокс
+// потом включить и исправить проблему перебивания стиля
+// }
 
 // footer__link--indent
 
@@ -293,6 +295,7 @@ body {
 //   border-radius: 20px;
 // }
 
+// можно оптимизировать!!!
 .menu__items::-webkit-scrollbar {
   width: 10px;
   background-color: #A4F7AC;
@@ -302,4 +305,16 @@ body {
 .menu__items::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #1ead2b;
+}
+
+.header-mobi__items::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #1ead2b;
+  width: 10px;
+}
+
+.header-mobi__items::-webkit-scrollbar {
+  width: 10px;
+  background-color: #A4F7AC;
+  border-radius: 20px;
 }

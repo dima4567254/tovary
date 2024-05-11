@@ -9,8 +9,16 @@ console.log('work6454');
 // });
 
 $('.header-burger').on('click', function () {
-  $('.header-mobi, .header-burger').toggleClass('active');
+  $('.header-mobi--one, .header-burger').toggleClass('active');
 });
+
+$('.header-mobi__link').on('click', function () {
+  $('.header-mobi--two').toggleClass('active');
+});
+
+// $('.header-mobi--list').on('click', function () {
+//   $('.header-mobi').toggleClass('header-mobi--list--active');
+// });
 // $('.header-burger').on('click', function () {
 //   $(' .header-burger').toggleClass('active');
 // });

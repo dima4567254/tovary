@@ -406,7 +406,12 @@
         margin-right: 40px;
       }
 
-      &__items {}
+      &__items {
+        @media (max-width: 992px) {
+          overflow: overlay;
+          height: 520px;
+        }
+      }
 
       &__item {
 
@@ -667,11 +672,9 @@
 .dropdown-tel {
   position: relative;
   transition: all .5s; //!!
-  // @include adaptiveValue("padding-left", 25, 20);
   @include adaptiveValue("padding-right", 25, 20);
   cursor: pointer;
-  font-size: rem(16);
-  @include line-height(16, 22);
+
 
   &:hover {
     .dropdown-tel__wrapper {
@@ -698,18 +701,13 @@
     background-size: cover;
     transform: rotate(0deg);
     transition: all .5s;
-  }
 
-  &__number {
-    color: #1ead2b;
-    font-weight: 600;
+    @media (max-width: 992px) {
+      position: inherit;
+    }
   }
 
   &__wrapper {
-    @include adaptiveValue("padding-bottom", 30, 20);
-    @include adaptiveValue("padding-top", 30, 20);
-    @include adaptiveValue("padding-left", 20, 10);
-    @include adaptiveValue("padding-right", 20, 10);
     z-index: -100;
     position: absolute;
     left: 0;
@@ -721,15 +719,33 @@
     border-radius: 0px 0px 8px 8px;
   }
 
+  &__number {
+    color: #1ead2b;
+    font-weight: 600;
+  }
+
+}
+
+.info-tel {
+  @include adaptiveValue("padding-bottom", 30, 20);
+  @include adaptiveValue("padding-top", 30, 20);
+  @include adaptiveValue("padding-left", 20, 10);
+  @include adaptiveValue("padding-right", 20, 10);
+
   &__links {
     margin-bottom: rem(20);
   }
 
   &__link {
     display: block;
+    font-size: 2rem;
 
     &:not(:last-child) {
       margin-bottom: rem(20);
+
+      @media (max-width: 992px) {
+        margin-bottom: rem(5);
+      }
     }
   }
 
@@ -749,6 +765,13 @@
     display: block;
     font-weight: 600;
     color: #000000;
+    font-size: rem(19); //свой fz
+    @include line-height(16, 19); //свой fz
+  }
+
+  &__text p {
+    font-size: rem(19); //свой fz
+    @include line-height(16, 19); //свой fz
   }
 }
 
@@ -788,4 +811,17 @@
     top: 30%;
     right: rem(5);
   }
+}
+
+.header-mobi--list {
+  display: none;
+  z-index: 999;
+
+  // &active {
+  //   display: flex !important;
+  // }
+
+  // &--active {
+  //   display: flex;
+  // }
 }
