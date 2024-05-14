@@ -16,6 +16,19 @@ $('.header-mobi__link').on('click', function () {
   $('.header-mobi--two').toggleClass('active');
 });
 
+// $('.header-mobi__svg').on('click', function () {
+//   $('.header-mobi--two').toggleClass('active');
+// });
+
+
+// three
+$('.header-mobi__svg').on('click', function () {
+  $('.header-mobi--two').toggleClass('active');
+});
+// $('.header-mobi__svg').on('click', function () {
+//   $('.header-mobi--two').toggleClass('header-mobi--active');
+// });
+
 // $('.header-mobi--list').on('click', function () {
 //   $('.header-mobi').toggleClass('header-mobi--list--active');
 // });

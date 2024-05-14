@@ -358,25 +358,31 @@
     // упарядочить по порядку
   }
 
+  .header-mobi--one {}
+
+
   .header-mobi {
     display: none;
 
     @media (max-width: 992px) {
-      transform: translateX(-200%);
-      display: block;
+
+      // transform: translateX(0%);
+      // display: block;
       position: absolute;
       top: 4%;
       width: 100%;
       left: 0;
-      flex-direction: column;
-      align-items: center;
+      // flex-direction: column;
+      // align-items: center;
       z-index: 5;
-      // background-color: #edf1f4;
       transition: transform 1s;
 
-      &.active {
-        transform: translateX(0%);
-      }
+      // &.active {
+      //   transform: translateX(0%);
+      //   display: block;
+      // }
+
+
 
       &__wrapper {
         display: flex;
@@ -450,10 +456,29 @@
       }
     }
 
-    // &--active {
-    //   transform: translateY(0%);
-    //   display: block;
-    // }
+    &--one {
+      transform: translateX(-200%);
+      display: block;
+
+      &.active {
+        transform: translateX(0%);
+      }
+    }
+
+    &--two {
+      // display: block !important;
+
+      // &--active {
+
+      &.active {
+        display: block !important;
+      }
+
+      // display: block !important;
+      // transform: translateX(0%);
+
+      // }
+    }
   }
 
   .hidden {
